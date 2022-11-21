@@ -25,5 +25,5 @@ outDir="./reciprical_blast_results"
  do
  path=${1}/${file}
  echo "querying ${path} agianst ${2}"
- blastp -query ${path} -db ${2} -num_descriptions 1 -num_alignments 1 -out ${outDir}/${file}_rblast.txt
+ blastp -query ${path} -db ${2} -num_descriptions 5 -num_alignments 5 -out ${outDir}/${file}_rblast.txt
  done
